@@ -3,6 +3,8 @@ package co.com.devco.tienda.videojuegos.user.infrastructure;
 import co.com.devco.tienda.videojuegos.user.application.*;
 import co.com.devco.tienda.videojuegos.user.domain.User;
 import co.com.devco.tienda.videojuegos.videogame.domain.Videogame;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -41,19 +43,22 @@ public class UserController {
         return findUser.find(id);
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/register")
-    User register(@RequestBody User user){
+    User register(@Valid @RequestBody User user){
 
         return register.register(user);
     }
 
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/{id}")
-    User update(@PathVariable("id") int id,
+    User update(@Valid @PathVariable("id") int id,
                      @RequestBody User user){
 
         return updateName.update(id, user);
     }
 
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     User delete(@PathVariable("id") int id){
         return deleteUser.delete(id);

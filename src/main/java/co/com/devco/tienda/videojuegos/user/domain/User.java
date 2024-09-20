@@ -1,7 +1,10 @@
 package co.com.devco.tienda.videojuegos.user.domain;
 
+import jakarta.validation.constraints.NotEmpty;
+
 public class User {
     private int id;
+    @NotEmpty
     private String fName;
     private String lName;
 

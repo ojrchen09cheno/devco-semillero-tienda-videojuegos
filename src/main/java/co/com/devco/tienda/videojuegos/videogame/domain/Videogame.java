@@ -1,9 +1,14 @@
 package co.com.devco.tienda.videojuegos.videogame.domain;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Positive;
+
 public class Videogame {
     private int id;
+    @NotEmpty
     private String name;
     private int console;
+    @Positive
     private int stock;
 
     public Videogame() {

@@ -1,10 +1,12 @@
 package co.com.devco.tienda.videojuegos.dto;
 
-public class Amount {
+public class AmountDTO {
 
     private int amount;
 
-    public Amount(int amount) {
+    private AmountDTO(){};
+
+    public AmountDTO(int amount) {
         this.amount = amount;
     }
 
