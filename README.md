@@ -5,7 +5,7 @@ Para ejecutar el proyecto, clonar el repisotio de git y en una terminal ejecutar
 ~~~
 ./gradlew bootRun
 ~~~
-Para ejecutar las pruebas correr. La cobertura de pruebas se encuentra en el archivo /build/jacocoHtml/index.html
+Para ejecutar las pruebas correr. El reporte de pruebas se encuentra en el archivo /build/reports/index.html y la cobertura de pruebas se encuentra en el archivo /build/jacocoHtml/index.html
 ~~~
 ./gradlew test
 ~~~
