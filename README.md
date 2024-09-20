@@ -1,12 +1,17 @@
-## devco-semillero-tienda-videojuegos
+# devco-semillero-tienda-videojuegos
 Proyecto para el semillero de devco de tienda de videojuegos
 
 Para ejecutar el proyecto, clonar el repisotio de git y en una terminal ejecutar dentro de la carpeta del proyecto
 ~~~
 ./gradlew bootRun
 ~~~
+Para ejecutar las pruebas correr. La cobertura de pruebas se encuentra en el archivo /build/jacocoHtml/index.html
+~~~
+./gradlew test
+~~~
+
 El proyecto cuenta con los siguientes endpoints API en localhost:8080/api
-# User
+## User
 GET /user : ver todos los usuarios
 GET /user/{id} : ver un usuario
 POST /user/register : registrarse, la API recibe las siguientes variables. Se recibe la id ya que de momento se usa una base de datos en memoria
@@ -19,7 +24,7 @@ PUT /user/{id} : actualizar el nombre del usuario, la API recibe las siguientes 
 ```
 DELETE /user/{id} : borrar usuario
 
-# Videogame
+## Videogame
 GET /videogame : ver todos los videojuego
 GET /videgame/{id} : ver un videojuego
 POST /videogame/add : agregar un videojuego al catalogo, a API recibe las siguientes variables. Se recibe la id ya que de momento se usa una base de datos en memoria
