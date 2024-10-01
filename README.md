@@ -1,5 +1,5 @@
 # devco-semillero-tienda-videojuegos
-Proyecto para el semillero de devco de tienda de videojuegos
+Proyecto para el semillero de devco de tienda de videojuegos de API backend con Java y Spring Boot para la aplicacion, pruebas fluidas con AssertJ y siguiendo una arquitectura hexagonal
 
 Para ejecutar el proyecto, clonar el repisotio de git y en una terminal ejecutar dentro de la carpeta del proyecto
 ~~~
