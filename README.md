@@ -1,5 +1,5 @@
 # devco-semillero-tienda-videojuegos
-Proyecto para el semillero de devco de tienda de videojuegos de API backend con Java y Spring Boot para la aplicacion, pruebas fluidas con AssertJ y siguiendo una arquitectura hexagonal
+Proyecto para el semillero de devco de tienda de videojuegos de API backend con Java y Spring Boot para la aplicacion, pruebas fluidas con AssertJ, documentacion con Swagger y siguiendo una arquitectura hexagonal
 
 Para ejecutar el proyecto, clonar el repisotio de git y en una terminal ejecutar dentro de la carpeta del proyecto
 ~~~
@@ -10,7 +10,7 @@ Para ejecutar las pruebas correr. El reporte de pruebas se encuentra en el archi
 ./gradlew test
 ~~~
 
-El proyecto cuenta con los siguientes endpoints API en localhost:8080/api
+El proyecto cuenta con los siguientes endpoints API en localhost:8080/api y de los cuales se puede ver la documentacion con Swagger en http://localhost:8080/docs
 ## User
 GET /user : ver todos los usuarios
 GET /user/{id} : ver un usuario
